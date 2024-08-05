@@ -1,4 +1,4 @@
-const fs = require("fs");
+import * as fs from "fs";
 
 const filePath = process.platform === "linux" ? "/dev/stdin" : "src/Baekjoon/bronze/b3_2738/input.txt";
 const input = fs.readFileSync(filePath, "utf8").toString().trim().split("\n");
