@@ -9,6 +9,7 @@ function solution(k, d) {
         //     answer++
         // }
         
+        // 시간복잡도를 줄일 때 일반적으로 수학적 공식을 이용하면 유용할 수 있다.
         let y = Math.sqrt(limit_dist ** 2 - x ** 2)
         // 0을 포함하기 때문에 + 1
         answer += Math.floor(y / step) + 1
