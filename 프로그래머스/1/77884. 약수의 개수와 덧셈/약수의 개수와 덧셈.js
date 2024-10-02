@@ -27,3 +27,10 @@ function solution(left, right) {
 
   return answer;
 }
+
+// 추가풀이.. 제곱근이 정수면 약수의 갯수가 홀수라는 규칙도 있다고 합니다.
+// if (Number.isInteger(Math.sqrt(i))) {
+//   answer -= i;
+// } else {
+//   answer += i;
+// }
