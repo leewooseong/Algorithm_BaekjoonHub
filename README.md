@@ -1,14 +1,3 @@
-# Algorithm_BaekjoonHub
-This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+# Algorithm
 
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0792-binary-search](https://github.com/leewooseong/Algorithm_BaekjoonHub/tree/master/0792-binary-search) |
-## Binary Search
-|  |
-| ------- |
-| [0792-binary-search](https://github.com/leewooseong/Algorithm_BaekjoonHub/tree/master/0792-binary-search) |
-<!---LeetCode Topics End-->
+BaekjoonHub & LeetHub 를 이용한 알고리즘 solve 문제 저장소
