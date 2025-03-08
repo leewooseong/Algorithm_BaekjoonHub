@@ -1,4 +1,3 @@
-const DIR = { UP: 'U', LEFT: 'L', RIGHT: 'R', DOWN: 'D' };
 const OPPOSITE_DIR = { U: 'D', D: 'U', R: 'L', L: 'R' };
 const DIR_MOVE = { U: [-1, 0], L: [0, -1], R: [0, 1], D: [1, 0] };
 
@@ -24,9 +23,7 @@ function solution(dirs) {
 
       currentRow = nextRow;
       currentCol = nextCol;
-    } catch (error) {
-      // console.log(error);
-    }
+    } catch (error) {}
   }
 
   return initialVisitCount;
