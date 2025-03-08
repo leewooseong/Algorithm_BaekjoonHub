@@ -13,17 +13,18 @@ function solution(dirs) {
     const nextRow = currentRow + moveInfo[0];
     const nextCol = currentCol + moveInfo[1];
 
-    try {
-      if (fieldMatrix[currentRow][currentCol][dir] === 0 || fieldMatrix[nextRow][nextCol][oppositeDir] === 0) {
-        fieldMatrix[currentRow][currentCol][dir] += 1;
-        fieldMatrix[nextRow][nextCol][oppositeDir] += 1;
+    const isInArrange = 0 <= nextRow && nextRow < fieldMatrix.length && 0 <= nextCol && nextCol < fieldMatrix.length;
+    if (!isInArrange) continue;
 
-        initialVisitCount += 1;
-      }
+    if (fieldMatrix[currentRow][currentCol][dir] === 0 || fieldMatrix[nextRow][nextCol][oppositeDir] === 0) {
+      fieldMatrix[currentRow][currentCol][dir] += 1;
+      fieldMatrix[nextRow][nextCol][oppositeDir] += 1;
 
-      currentRow = nextRow;
-      currentCol = nextCol;
-    } catch (error) {}
+      initialVisitCount += 1;
+    }
+
+    currentRow = nextRow;
+    currentCol = nextCol;
   }
 
   return initialVisitCount;
