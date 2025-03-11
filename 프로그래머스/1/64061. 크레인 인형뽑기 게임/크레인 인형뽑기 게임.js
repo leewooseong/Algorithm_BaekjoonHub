@@ -16,19 +16,15 @@ function solution(board, moves) {
   }
 
   moves.forEach(move => {
-    if (dollsInfo[move].length <= 0) return;
-
     const doll = dollsInfo[move].pop();
-    console.log(doll);
+    if (!doll) return;
 
-    if (stack.length === 0) {
-      stack.push(doll);
-    } else if (stack[stack.length - 1] === doll) {
+    if (stack[stack.length - 1] === doll) {
       stack.pop();
       matchingCount++;
-    } else {
-      stack.push(doll);
+      return;
     }
+    stack.push(doll);
   });
 
   return matchingCount * 2;
